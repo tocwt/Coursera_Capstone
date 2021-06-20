@@ -1,0 +1,48 @@
+Question: If a client decides to open a gym/fitness centre in New York, 
+which neighbourhood(s) is(are) recommended?
+
+
+Request is issued to fourshare to identify all fitness facilities in New York. 
+They are then grouped together by their locations. 
+With the grouping, we can find out the neighborhoods with more fitness facilities.
+
+Recommendation can be made based on the presence of fitness facilities in the neightborhood and 
+the popularity of the type of fitness facilities in the neighborhood. 
+
+Introduction
+Gym owners are interested to know the ideal locations to open shops with more people interested in
+gyms/fitness centers.
+
+Data
+Data used include:
+(a) neighborhood data of New York
+(b) geospactial data of New York neighborhood
+(c) venue data of New York from foursquare
+
+Methodology
+Foursquare api is used to retrieve the fitness related venues in New York and 
+their respective neighborhoods. Clustering is used to group neighborhoods with similar
+venue compositions.
+
+Popularity of the types of venues is also found.
+
+Result
+Number of venues
+The neighborhoods with highest number of venues (limit 100)
+Financial District - 100
+Flatiron - 100
+Soho - 100
+Civic Center - 93
+
+First most common venue of the neightborhoods above
+Financial District - Gym
+Flatiron - Gym/Fitness Center
+Soho - Gym/Fitness Center
+Civic Center - Gym/Fitness Center
+
+Discussion
+Financial District, Flatiron and Soho have largest population of the fitness related facilities.
+Only Flatiron and Soho have people with most common venue being gym/fitness center.
+
+Conclusion
+It is more preferable to open a gym/fitness center in either Flatiron or Soho.
